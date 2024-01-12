@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(19333449.jpg);
+  background-size:100%;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#heading {
+  font-family:cursive;
+  text-decoration:wavy;
+  font-size: 60px;
+  color:rgb(255, 180, 17);
+  animation: fadeIn 3s ease-in-out;
+}
+  @keyframes fadeIn { 
+    0% {
+      transform: rotateY(0deg);
+      opacity: 0%;
+    }    
+    100% {
+      transform: rotateY(360deg);
+      opacity: 1;
+    }
+  }
+#text-area {
+  background-image: url(notebook-background.jpg);
+  background-size:cover;
+  border: 2px solid rgb(24, 24, 24);
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px;
+  color:black;
+  padding-left: 200px;
+  padding-top: 20px;
+}
+.btn {
+  background-color:rgb(24, 139, 139);
+  color: white;
+  font-size: 25px;
+  font-family:monospace;
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb(49, 86, 180);
+  }
+}
