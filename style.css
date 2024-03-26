@@ -24,12 +24,13 @@ body{
 }
 #heading {
   font-size: 3rem;
-  color: whitesmoke;
+  color: white;
 }
 #text-area {
   border: 2px solid black;
   border-radius: 0.75rem;
   font-size: 20px;
+  padding-top: 15px;
   padding: 10px;
   color:black;
   text-align:center;
@@ -37,7 +38,7 @@ body{
 }
 .btn {
   width: 185px;
-  height: 40px;
+  height: 50px;
   background-image: linear-gradient(to right,aqua,rgb(177, 100, 187),rgb(236, 100, 123));
   color: white;
   font-size: 25px;
