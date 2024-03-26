@@ -10,7 +10,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url(/Talk2Text/assets/bg-01.jpg);
+  background-image: url(/assets/bg-01.jpg);
   background-size:100%;
   background-color: #cccccc;
   display: flex;
