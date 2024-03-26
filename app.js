@@ -1,5 +1,6 @@
 let voiceToText = document.querySelector("#voice-to-text");
 let textToVoice = document.querySelector("#text-to-voice");
+let stop = document.querySelector("#stop");
 
 voiceToText.addEventListener("click",function() {
 let recognition = new webkitSpeechRecognition();
@@ -14,5 +15,8 @@ textToVoice.addEventListener("click",function(){
     let speech = new SpeechSynthesisUtterance();
     speech.text = document.querySelector("#text-area").value;
     window.speechSynthesis.speak(speech);
-} )
+});
                                                                                                                                                 
+stop.addEventListener("click",()=> {
+    window.speechSynthesis.cancel();
+});
