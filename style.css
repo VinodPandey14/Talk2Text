@@ -36,7 +36,7 @@ body{
   resize: none;
 }
 .btn {
-  width: 170px;
+  width: 185px;
   height: 40px;
   background-image: linear-gradient(to right,aqua,rgb(177, 100, 187),rgb(236, 100, 123));
   color: white;
