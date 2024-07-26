@@ -52,3 +52,20 @@ body{
     background-color: rgb(49, 86, 180);
   }
 }
+.button-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group label {
+  margin: 0 10px;
+}
+
+#language-select {
+  height: 40px;
+  font-size: 20px;
+  margin-left: 10px;
+}

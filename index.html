@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice to Text Convertor</title>
+    <title>Talk2Text</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 id = "heading">Talk2Text</h1>
+        <h1 id="heading">Talk2Text</h1>
         <textarea id="text-area" cols="60" rows="15">Welcome to Talk2Text</textarea>
-        <div>
-            <button class = "btn" id = "voice-to-text">Voice To Text</button>
-            <button class="btn" id = "text-to-voice">Text To Voice</button>
-            <button class="btn" id = "stop">Stop</button>
+        <div class="button-group">
+            <button class="btn" id="voice-to-text">Voice To Text</button>
+            <button class="btn" id="text-to-voice">Text To Voice</button>
+            <button class="btn" id="stop">Stop</button>
+        </div>
+        <div class="button-group">
+            <button class="btn" id="translate">Translate</button>
+            <select id="language-select">
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0" max="2" value="1" step="0.1">
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" value="1" step="0.1">
+        </div>
+        <div class="button-group">
+            <button class="btn" id="save">Save Text</button>
+        </div>
+        <div class="button-group">
+            <label for="voice-select">Select Voice:</label>
+            <select id="voice-select">
+            </select>
         </div>
     </div>
-   <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
