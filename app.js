@@ -73,20 +73,10 @@ function populateVoiceOptions() {
         return;
     }
 
-    let voiceOptions = voices.filter(v =>
-        ['Google US English', 'Google UK English Male', 'Google UK English Female', 'Google Hindi', 'Microsoft Hindi Desktop - Hindi'].includes(v.name)
-    );
-    if (!voiceOptions.some(v => v.name === 'Google Hindi')) {
-        voiceOptions.push(voices.find(v => v.name === 'Google Hindi') || {name: 'Google Hindi', lang: 'hi-IN'});
-    }
-    if (!voiceOptions.some(v => v.name === 'Google US English')) {
-        voiceOptions.push(voices.find(v => v.name === 'Google US English') || {name: 'Google US English', lang: 'en-US'});
-    }
-
     voiceSelect.innerHTML = '';
-    voiceOptions.forEach(voice => {
+    voices.forEach(voice => {
         let option = document.createElement("option");
-        option.textContent = voice.name;
+        option.textContent = `${voice.name} (${voice.lang})`;
         option.value = voice.name;
         voiceSelect.appendChild(option);
     });
